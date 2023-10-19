@@ -1,0 +1,25 @@
+# Logs
+logs
+*.log
+yarn-error.log*
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/
+dist/
+*.prod.js
+*.dev.js
+*.devServer.js
+*.common.js
+statistics
+*.test.js
+
+# Dependency directory
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
+node_modules
+.idea
+.vscode
+
+#ignore checking assets folder
+assets/
+public/
+/**/*.d.ts
