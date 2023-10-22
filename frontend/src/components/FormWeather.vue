@@ -1,9 +1,10 @@
 <template>
-  <div class="hello">
-    <form>
+  <div class="w-1/2">
+    <form class="w-full flex flex-col justify-center items-center mx-auto gap-6" @submit.prevent>
+      <h2 class="text-lg text-center">Введите название города</h2>
       <input
         type="text"
-        class="w-28 h-6 border-2 border-slate-950 border-solid"
+        class="w-4/5 h-7 p-2 border-2 border-slate-950 border-solid rounded-lg"
         placeholder="Введите город"
         :value="city"
         @input="changeCity"
@@ -16,7 +17,7 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'HelloWorld',
+  name: 'FormWeather',
   props: {
     city: String,
   },
@@ -29,10 +30,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-.hello {
-  width: max-content;
-}
-</style>

@@ -1,8 +1,24 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">Profile</router-link>
-  </nav>
+  <NavBar />
   <router-view />
-  <h1 class="text-3xl font-bold underline">This is an about page</h1>
+  <FooterComponent />
 </template>
+
+<script lang="ts">
+import NavBar from './components/NavBar.vue';
+import FooterComponent from '@/components/FooterComponent.vue';
+export default {
+  components: {
+    FooterComponent,
+    NavBar,
+  },
+};
+</script>
+
+<style scoped lang="scss">
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+</style>

@@ -6,5 +6,5 @@
   "tabWidth": 2,
   "arrowParens": "always",
   "jsxSingleQuote": true,
-  "endOfLine": "lf"
+  "endOfLine": "auto"
 }
