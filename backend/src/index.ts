@@ -6,7 +6,7 @@ import cors from 'cors';
 
 // constant
 const PORT = 5000;
-const uri = 'mongodb+srv://ivshavrin:uy5caME3Lta7oHS4@testvue.66gxr5q.mongodb.net/?retryWrites=true&w=majority';
+const uri = '';
 
 // client init
 const app = express();
